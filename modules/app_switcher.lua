@@ -101,22 +101,16 @@ end
 --[[
   Initializes application shortcut keybindings
 ]]
-function appSwitcher.init_bindings(appCuts, hyperAppCuts, mash_app, HYPER)
+function appSwitcher.init_bindings(appCuts, mash_app)
     for key, app in pairs(appCuts) do
         hs.hotkey.bind(mash_app, key, function()
             appSwitcher.toggle_app(app)
         end)
     end
 
-    for key, app in pairs(hyperAppCuts) do
-        hs.hotkey.bind(HYPER, key, function()
-            appSwitcher.toggle_app(app)
-        end)
-    end
-
     -- Help binding
     hs.hotkey.bind(mash_app, ';', function()
-        appSwitcher.display_help(appCuts, hyperAppCuts)
+        appSwitcher.display_help(appCuts)
     end)
 end
 
