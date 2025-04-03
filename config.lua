@@ -26,16 +26,16 @@ config.app_switcher = {
 
 -- Application shortcuts with direct lowercase mapping
 config.appCuts = {
-    1 = 'Microsoft Edge',
-    2 = 'Google Chrome',
-    3 = 'Cursor',
-    4 = 'Visual Studio Code',
-    5 = 'Sourcetree',
-    6 = 'iTerm',
-    7 = 'Apifox',   
-    8 = 'Slack',
-    -- 9 = 'WeChat',
-    0 = '网易云音乐'
+    ['1'] = 'Microsoft Edge',
+    ['2'] = 'Google Chrome',
+    ['3'] = 'Cursor',
+    ['4'] = 'Visual Studio Code',
+    ['5'] = 'Sourcetree',
+    ['6'] = 'iTerm',
+    ['7'] = 'Apifox',   
+    ['8'] = 'Slack',
+    -- ['9'] = 'WeChat',
+    ['0'] = '网易云音乐'
 }
 
 config.hyperAppCuts = {
